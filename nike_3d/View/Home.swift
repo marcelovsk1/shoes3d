@@ -14,7 +14,9 @@ struct Home: View {
     @State var isVerticalLook: Bool = false
     var body: some View {
         VStack {
-            // MARK: 3D Preview
+            HeaderView()
+            
+            // MARK: 3D View
             CustomSceneView(scene: $scene)
                 .frame(height: 350)
         }
