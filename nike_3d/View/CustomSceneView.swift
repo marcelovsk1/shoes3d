@@ -1,18 +1,31 @@
 //
 //  CustomSceneView.swift
-//  nike_3d
+//  shoes_app
 //
 //  Created by Marcelo Amaral Alves on 2024-04-25.
 //
 
 import SwiftUI
+import SceneKit
 
-struct CustomSceneView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CustomSceneView: UIViewRepresentable {
+    @Binding var scene: SCNScene?
+    
+    func makeUIView(context: Context) -> some UIView {
+        let view = SCNView()
+        view.allowsCameraControl = true
+        view.autoenablesDefaultLighting = true
+        view.antialiasingMode = .multisampling2X
+        view.scene = scene
+        view.backgroundColor = .orange
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        //
     }
 }
 
 #Preview {
-    CustomSceneView()
+    ContentView()
 }

@@ -11,6 +11,11 @@
 		0BA7871D2BDADEFB00E24D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7871C2BDADEFB00E24D90 /* ContentView.swift */; };
 		0BA7871F2BDADEFC00E24D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7871E2BDADEFC00E24D90 /* Assets.xcassets */; };
 		0BA787222BDADEFC00E24D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA787212BDADEFC00E24D90 /* Preview Assets.xcassets */; };
+		0BA7872B2BDADFA200E24D90 /* nike_dunk.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0BA787282BDADFA100E24D90 /* nike_dunk.scn */; };
+		0BA7872C2BDADFA200E24D90 /* Nike_Zoom.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0BA787292BDADFA100E24D90 /* Nike_Zoom.scn */; };
+		0BA7872D2BDADFA200E24D90 /* nike_react.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7872A2BDADFA200E24D90 /* nike_react.scn */; };
+		0BA787302BDADFBD00E24D90 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7872F2BDADFBD00E24D90 /* Home.swift */; };
+		0BA787322BDAE0B200E24D90 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA787312BDAE0B200E24D90 /* CustomSceneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		0BA7871C2BDADEFB00E24D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BA7871E2BDADEFC00E24D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA787212BDADEFC00E24D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BA787282BDADFA100E24D90 /* nike_dunk.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = nike_dunk.scn; sourceTree = "<group>"; };
+		0BA787292BDADFA100E24D90 /* Nike_Zoom.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Nike_Zoom.scn; sourceTree = "<group>"; };
+		0BA7872A2BDADFA200E24D90 /* nike_react.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = nike_react.scn; sourceTree = "<group>"; };
+		0BA7872F2BDADFBD00E24D90 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0BA787312BDAE0B200E24D90 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,9 @@
 		0BA7870E2BDADEFB00E24D90 = {
 			isa = PBXGroup;
 			children = (
+				0BA787282BDADFA100E24D90 /* nike_dunk.scn */,
+				0BA7872A2BDADFA200E24D90 /* nike_react.scn */,
+				0BA787292BDADFA100E24D90 /* Nike_Zoom.scn */,
 				0BA787192BDADEFB00E24D90 /* nike_3d */,
 				0BA787182BDADEFB00E24D90 /* Products */,
 			);
@@ -51,6 +64,7 @@
 		0BA787192BDADEFB00E24D90 /* nike_3d */ = {
 			isa = PBXGroup;
 			children = (
+				0BA7872E2BDADFA700E24D90 /* View */,
 				0BA7871A2BDADEFB00E24D90 /* nike_3dApp.swift */,
 				0BA7871C2BDADEFB00E24D90 /* ContentView.swift */,
 				0BA7871E2BDADEFC00E24D90 /* Assets.xcassets */,
@@ -65,6 +79,15 @@
 				0BA787212BDADEFC00E24D90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BA7872E2BDADFA700E24D90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7872F2BDADFBD00E24D90 /* Home.swift */,
+				0BA787312BDAE0B200E24D90 /* CustomSceneView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA7872B2BDADFA200E24D90 /* nike_dunk.scn in Resources */,
+				0BA7872C2BDADFA200E24D90 /* Nike_Zoom.scn in Resources */,
+				0BA7872D2BDADFA200E24D90 /* nike_react.scn in Resources */,
 				0BA787222BDADEFC00E24D90 /* Preview Assets.xcassets in Resources */,
 				0BA7871F2BDADEFC00E24D90 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA787322BDAE0B200E24D90 /* CustomSceneView.swift in Sources */,
 				0BA7871D2BDADEFB00E24D90 /* ContentView.swift in Sources */,
+				0BA787302BDADFBD00E24D90 /* Home.swift in Sources */,
 				0BA7871B2BDADEFB00E24D90 /* nike_3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
