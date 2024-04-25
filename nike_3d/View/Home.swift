@@ -9,7 +9,7 @@ import SwiftUI
 import SceneKit
 
 struct Home: View {
-    @State var scene: SCNScene? = .init(named: "nike_react.scn")
+    @State var scene: SCNScene? = .init(named: "nike_dunk.scn")
     // Mark: View Properties
     @State var isVerticalLook: Bool = false
     var body: some View {
