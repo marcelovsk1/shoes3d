@@ -79,6 +79,17 @@ struct Home: View {
                 Text("Nike React-X 4 ")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
+                
+                Text("Men's Running Shoes")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
+                
+                Label {
+                    Text("4.5")
+                        .fontWeight(.semibold)
+                } icon: {
+                    Image(systemName: "star.fill")
+                }
             }
             .padding(.top, 30)
             .frame(maxWidth: .infinity, alignment: .leading)
