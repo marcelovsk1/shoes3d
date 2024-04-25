@@ -33,10 +33,30 @@ struct Home: View {
         GeometryReader {_ in
             Rectangle()
                 .trim(from: 0, to: 0474)
-                .stroke(.linearGradient(colors: [],
+                .stroke(.linearGradient(colors: [
+                    .clear,
+                    .clear,
+                    .black.opacity(0.2),
+                    .black.opacity(0.6),
+                    .white,
+                    .white.opacity(0.6),
+                    .white.opacity(0.2),
+                    .clear,
+                    .clear],
                         startPoint: .leading, endPoint: .trailing), style:
                         StrokeStyle(lineWidth: 2, lineCap: .round,
                         lineJoin: .round, miterLimit: 1, dash: [3], dashPhase: 1))
+                .overlay {
+                    // MARK: Seeker View
+                    HStack(spacing: 3) {
+                        Image(systemName: "arrowtriangle.left.fill")
+                            .font(.caption)
+                        Image(systemName: "arrowtriangle.right.fill")
+                            .font(.caption)
+                    }
+                    .foregroundColor(.orange)
+                    
+                }
         }
         
     }

@@ -17,7 +17,7 @@ struct CustomSceneView: UIViewRepresentable {
         view.autoenablesDefaultLighting = true
         view.antialiasingMode = .multisampling2X
         view.scene = scene
-        view.backgroundColor = .orange
+        view.backgroundColor = .clear
         return view
     }
     
