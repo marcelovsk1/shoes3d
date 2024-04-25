@@ -38,11 +38,12 @@ struct Home: View {
                     .clear,
                     .black.opacity(0.2),
                     .black.opacity(0.6),
-                    .white,
-                    .white.opacity(0.6),
-                    .white.opacity(0.2),
+                    .black,
+                    .black.opacity(0.6),
+                    .black.opacity(0.2),
                     .clear,
-                    .clear],
+                    .clear
+                ],
                         startPoint: .leading, endPoint: .trailing), style:
                         StrokeStyle(lineWidth: 2, lineCap: .round,
                         lineJoin: .round, miterLimit: 1, dash: [3], dashPhase: 1))
@@ -54,7 +55,14 @@ struct Home: View {
                         Image(systemName: "arrowtriangle.right.fill")
                             .font(.caption)
                     }
-                    .foregroundColor(.orange)
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 7)
+                    .padding(.vertical, 10)
+                    .background {
+                        RoundedRectangle(cornerRadius: 10,
+                                         style: .continuous)
+                        .fill(.orange)
+                    }
                     
                 }
         }
