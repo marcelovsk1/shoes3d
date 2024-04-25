@@ -19,8 +19,26 @@ struct Home: View {
             // MARK: 3D View
             CustomSceneView(scene: $scene)
                 .frame(height: 350)
+                .padding(.top, -50)
+                .padding(.bottom, -15)
+            
+            CustomSeeker()
         }
         .padding()
+    }
+    
+    // MARK: Custom Seeker
+    @ViewBuilder
+    func CustomSeeker() -> some View {
+        GeometryReader {_ in
+            Rectangle()
+                .trim(from: 0, to: 0474)
+                .stroke(.linearGradient(colors: [],
+                        startPoint: .leading, endPoint: .trailing), style:
+                        StrokeStyle(lineWidth: 2, lineCap: .round,
+                        lineJoin: .round, miterLimit: 1, dash: [3], dashPhase: 1))
+        }
+        
     }
     
     // MARK: Header View
