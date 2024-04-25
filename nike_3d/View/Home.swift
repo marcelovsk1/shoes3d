@@ -23,6 +23,8 @@ struct Home: View {
                 .padding(.bottom, -15)
             
             CustomSeeker()
+            
+            ShoePropertiesViews()
         }
         .padding()
     }
@@ -38,7 +40,7 @@ struct Home: View {
                     .clear,
                     .black.opacity(0.2),
                     .black.opacity(0.6),
-                    .black,
+                    .white,
                     .black.opacity(0.6),
                     .black.opacity(0.2),
                     .clear,
@@ -63,10 +65,20 @@ struct Home: View {
                                          style: .continuous)
                         .fill(.orange)
                     }
-                    
+                    .offset(y: -2)
                 }
         }
         
+    }
+    
+    // MARK: Shoe Properties
+    @ViewBuilder
+    func ShoePropertiesViews() -> some View {
+        VStack {
+            VStack(alignment: .leading, spacing: 12) {
+                /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            }
+        }
     }
     
     // MARK: Header View
