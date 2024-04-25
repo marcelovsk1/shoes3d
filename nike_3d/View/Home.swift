@@ -34,7 +34,7 @@ struct Home: View {
     func CustomSeeker() -> some View {
         GeometryReader {_ in
             Rectangle()
-                .trim(from: 0, to: 0474)
+                .trim(from: 0, to: 0.474)
                 .stroke(.linearGradient(colors: [
                     .clear,
                     .clear,
@@ -48,7 +48,7 @@ struct Home: View {
                 ],
                         startPoint: .leading, endPoint: .trailing), style:
                         StrokeStyle(lineWidth: 2, lineCap: .round,
-                        lineJoin: .round, miterLimit: 1, dash: [3], dashPhase: 1))
+                        lineJoin: .round, miterLimit: 1, dash: [2], dashPhase: 1))
                 .overlay {
                     // MARK: Seeker View
                     HStack(spacing: 3) {
@@ -65,7 +65,7 @@ struct Home: View {
                                          style: .continuous)
                         .fill(.orange)
                     }
-                    .offset(y: -2)
+                    .offset(y: -8)
                 }
         }
         
@@ -76,8 +76,12 @@ struct Home: View {
     func ShoePropertiesViews() -> some View {
         VStack {
             VStack(alignment: .leading, spacing: 12) {
-                /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+                Text("Nike React-X 4 ")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
             }
+            .padding(.top, 30)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
     
@@ -103,7 +107,7 @@ struct Home: View {
             Button {
                 withAnimation(.easeInOut){isVerticalLook.toggle()}
             } label: {
-                Image(systemName: "arrow.left")
+                Image(systemName: "arrowtriangle.left.and.line.vertical.and.arrowtriangle.right.fill")
                     .font(.system(size: 16, weight: .heavy))
                     .foregroundColor(.black)
                     .frame(width: 42, height: 42)
